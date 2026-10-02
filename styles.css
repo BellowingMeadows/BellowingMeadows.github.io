@@ -240,6 +240,39 @@ body {
   line-height: 1.3;
 }
 
+/* ---------- BAND LINEUP ---------- */
+.band-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.2rem;
+  margin-top: 3rem;
+}
+
+.member {
+  text-align: center;
+  padding: 1.4rem 1rem;
+  border: 1px solid rgba(255, 213, 63, 0.25);
+  border-radius: 10px;
+  background: rgba(255, 246, 222, 0.03);
+}
+
+.member-name {
+  font-family: 'Pirata One', serif;
+  font-size: 1.4rem;
+  color: var(--gold);
+  margin-bottom: 0.4rem;
+}
+
+.member-role {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--cream);
+  opacity: 0.8;
+  line-height: 1.7;
+}
+
 /* ---------- CONTACT ---------- */
 .contact-links {
   display: flex;
@@ -264,5 +297,6 @@ body {
   .music-grid { grid-template-columns: 1fr; }
   .about-inner { grid-template-columns: 1fr; }
   .about-art { max-width: 320px; margin: 0 auto; }
+  .band-grid { grid-template-columns: repeat(2, 1fr); }
   .section { padding: 3.5rem 1.25rem; }
 }
